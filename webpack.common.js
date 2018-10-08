@@ -11,7 +11,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'www/'),
-        filename: '[name].[contenthash].js',
+        filename: '[name].[hash].js',
     },
     module: {
         rules: [{
@@ -52,10 +52,6 @@ module.exports = {
             title: 'My killer app',
             template: "src/index.html",
             filename: "./index.html"
-        }),
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
-            chunkFilename: "[id].css"
         })
     ]
 

@@ -1,0 +1,15 @@
+{
+  "name": "minkfoodiee",
+  "app_id": "",
+  "type": "ionic1",
+  "integrations": {
+    "cordova": {},
+    "gulp": {}
+  },
+  "watchPatterns": [
+    "www/theme/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
+}

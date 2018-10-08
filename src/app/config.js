@@ -1,4 +1,4 @@
-import home from './components/home/home.html';
+import home from './pages/home/home.html';
 /**
  * Application config which configures the routing and other ...
  * @param {object} $stateProvider - State provider service from ui-router
