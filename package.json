@@ -1,0 +1,72 @@
+{
+  "name": "webpack-starter",
+  "version": "1.0.0",
+  "description": "A light foundation for your next frontend project based on webpack.",
+  "scripts": {
+    "start": "ionic serve",
+    "build": "webpack --config webpack/webpack.config.prod.js  --colors",
+    "dev": "webpack-dev-server --open --config webpack/webpack.config.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomavic/ionic1-es6-webpack4-starter.git"
+  },
+  "keywords": [
+    "webpack",
+    "startkit",
+    "frontend",
+    "es6",
+    "javascript",
+    "webdev"
+  ],
+  "author": "webkid.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomavic/ionic1-es6-webpack4-starter/issues"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "rules": {
+      "semi": 2
+    }
+  },
+  "homepage": "https://github.com/tomavic/ionic1-es6-webpack4-starter#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.4.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-angular": "^3.3.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "ng-annotate-loader": "^0.6.1",
+    "ngtemplate-loader": "^2.0.1",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  },
+  "dependencies": {
+    "angular": "^1.7.5",
+    "angular-ui-router": "^1.0.20",
+    "babel-polyfill": "^6.26.0",
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
