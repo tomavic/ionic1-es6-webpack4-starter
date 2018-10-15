@@ -11,11 +11,13 @@ import "../lib/ionic/js/ionic.bundle";
 import appRun from "./app.run";
 import appConfig from "./app.config";
 import appController from "./app.controller";
-import appDirectives from "./app.directives";
-import appServices from "./app.services";
+
+import appDirectives from "./components";
+import appServices from "./services";
+import appPages from "./pages";
 
 // basically, import aboutModule.name
-import aboutModule from "./views/about/about.module";
+
 
 const appModule = angular
   .module("ionicSeed", [
@@ -29,11 +31,11 @@ const appModule = angular
     // high level app services
     appServices.name,
 
-    // all other application modules will be imported here
-    aboutModule.name
+    // all other application pages
+    appPages.name
   ])
-  .controller("AppController", appController)
   .run(appRun)
-  .config(appConfig);
+  .config(appConfig)
+  .controller("AppController", appController);
 
 export default appModule;

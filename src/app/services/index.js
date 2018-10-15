@@ -1,4 +1,4 @@
-import userService from './services/userService/userService';
+import userService from './userService/userService';
 
 export default angular
     .module('ionicSeed.services', [])
