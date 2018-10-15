@@ -2,7 +2,7 @@
 // import 'angular-animate/angular-animate';
 // import 'angular-sanitize/angular-sanitize';
 // import 'ionic-sdk/release/js/angular-ui/angular-ui-router';
-import "../lib/ionic/js/ionic.bundle";
+import "../assets/lib/ionic/js/ionic.bundle";
 // import 'ionic-sdk/release/js/ionic-angular';
 
 // import ngCordova

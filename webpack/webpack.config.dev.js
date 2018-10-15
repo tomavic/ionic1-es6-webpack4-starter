@@ -22,7 +22,7 @@ module.exports = merge(common, {
       {
         test: /\.(js)$/,
         include: Path.resolve(__dirname, '../src'),
-        exclude: Path.resolve(__dirname, '../src/lib'),
+        exclude: Path.resolve(__dirname, '../src/assets'),
         enforce: 'pre',
         loader: 'eslint-loader',
         options: {
