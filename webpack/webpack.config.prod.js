@@ -9,7 +9,7 @@ module.exports = merge(common, {
   devtool: 'source-map',
   stats: 'errors-only',
   optimization: {
-    minimize: true
+    minimize: false
   },
   plugins: [
     new Webpack.DefinePlugin({
