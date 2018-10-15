@@ -22,6 +22,6 @@ export default class AppController {
     }
 
     onAboutTap() {
-        this.$state.go('about');
+        this.$state.go('app.about');
     }
 }

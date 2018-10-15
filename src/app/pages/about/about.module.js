@@ -1,11 +1,11 @@
-import aboutConfig from './about.routing';
+import AboutRouting from './about.routing';
 import AboutController from './about.controller';
 import './about.scss';
 
 
-const aboutModule = angular
-    .module('ionicSeed.about', [])
-    .config(aboutConfig)
+const AboutPageModule = angular
+    .module('about-page', [])
+    .config(AboutRouting)
     .controller('AboutController', AboutController);
 
-export default aboutModule;
+export default AboutPageModule;

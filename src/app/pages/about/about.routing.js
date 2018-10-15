@@ -1,13 +1,18 @@
 import aboutTemplate from './about.html';
 
 /*@ngInject*/
-const AboutConfig = ($stateProvider) => {
-    $stateProvider.state('about', {
+const AboutRouting = ($stateProvider) => {
+    $stateProvider
+    .state('app.about', {
         url: '/about',
-        template: aboutTemplate,
-        controller: 'AboutController',
-        controllerAs: 'about'
-    });
+        views: {
+          'appContent': {
+            template: aboutTemplate,
+            controller: 'AboutController',
+            controllerAs: 'about'
+          }
+        }
+      });
 };
 
-export default AboutConfig;
+export default AboutRouting;

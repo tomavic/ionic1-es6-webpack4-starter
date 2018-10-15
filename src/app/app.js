@@ -8,24 +8,24 @@ import "../lib/ionic/js/ionic.bundle";
 // import ngCordova
 // import 'ng-cordova';
 
-import appRun from "./app.run";
-import appConfig from "./app.config";
-import appController from "./app.controller";
+import AppRun from "./app.run";
+import AppRouting from "./app.routing";
+import AppController from "./app.controller";
 
+
+// import all app-related parts
 import appDirectives from "./components";
 import appServices from "./services";
 import appPages from "./pages";
 
-// basically, import aboutModule.name
 
-
-const appModule = angular
+const AppModule = angular
   .module("ionicSeed", [
     // include ionic, and angular
     "ionic",
     // 'ngCordova',
 
-    // high level app directives
+    // high level app directives or components
     appDirectives.name,
 
     // high level app services
@@ -34,8 +34,8 @@ const appModule = angular
     // all other application pages
     appPages.name
   ])
-  .run(appRun)
-  .config(appConfig)
-  .controller("AppController", appController);
+  .run(AppRun)
+  .config(AppRouting)
+  .controller("AppController", AppController);
 
-export default appModule;
+export default AppModule;

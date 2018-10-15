@@ -1,7 +1,11 @@
 // import all app pages/views here
-import aboutModule from "./about/about.module";
+import About from "./about/about.module";
+import Splash from "./splash/splash.module";
+import Home from "./home/home.module";
 
 export default angular
     .module('ionicSeed.pages', [
-        aboutModule.name
+        About.name,
+        Splash.name,
+        Home.name
     ]);

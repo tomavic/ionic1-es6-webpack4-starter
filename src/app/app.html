@@ -1,17 +1,31 @@
-<ion-view view-title="Ionic Seed">
-    <ion-content padding="true">
-        <user-menu user="app.user"></user-menu>
-        <button ng-click="app.onAboutTap()" class="button button-block button-positive button-outline">
-            <strong>About</strong>
-        </button>
-
-        <ion-list>
-            <ion-item class="item-avatar" ng-repeat="user in app.users">
-                <img ng-src="{{ user.avatar }}">
-                <h2>{{ user.name }}</h2>
-                <p>{{ user.email }}</p>
-            </ion-item>
-        </ion-list>
-
-    </ion-content>
-</ion-view>
+<ion-side-menus>
+    <ion-side-menu side="left">
+        <ion-header-bar align-title="center" class="bar-dark bar-gradient-dark">
+            <h1 class="title">Welcome, User</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>
+                <ion-item class="item-icon-left" ui-sref="app.home" menu-close>
+                    <i class="icon ion-ios-home-outline"></i> Home
+                </ion-item>
+                <ion-item class="item-icon-left" ui-sref="app.about" menu-close>
+                    <i class="icon ion-ios-help-outline"></i> About
+                </ion-item>
+                <ion-item class="item-icon-left">
+                    <i class="icon ion-ios-gear-outline"></i> Settings
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive bar-gradient">
+            <ion-nav-buttons side="left">
+                <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+            </ion-nav-buttons>
+            <ion-nav-back-button></ion-nav-back-button>
+        </ion-nav-bar>
+        <!-- All app contents goes here -->
+        <ion-nav-view name="appContent"></ion-nav-view>
+        
+    </ion-side-menu-content>
+</ion-side-menus>
