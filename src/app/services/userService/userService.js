@@ -1,6 +1,7 @@
 import { assign } from 'lodash';
 
-export default class UserService {
+
+class UserService {
     /*@ngInject*/
     constructor(apiUrl, $http) {
         assign(this, { apiUrl, $http });
@@ -14,3 +15,7 @@ export default class UserService {
         return this.$http.get(`${this.apiUrl}/users`);
     }
 }
+
+
+
+export default UserService;
