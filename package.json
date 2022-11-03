@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/tomavic/ionic1-es6-webpack4-starter#readme",
   "devDependencies": {
-    "@ionic/v1-toolkit": "1.0.10",
+    "@ionic/v1-toolkit": "3.2.20",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
